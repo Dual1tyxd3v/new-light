@@ -1,0 +1,25 @@
+.intro {
+  background-color: #000;
+  &__container {
+    padding: 0 5px;
+    overflow: hidden;
+  }
+  &__title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 33.6px;
+    font-style: normal;
+    text-transform: uppercase;
+    & b {
+      color: #ef4242;
+      font-weight: 600;
+      letter-spacing: -1px;
+    }
+  }
+  &__text {
+    color: #fff;
+    transform: translateZ(20px);
+  }
+}
