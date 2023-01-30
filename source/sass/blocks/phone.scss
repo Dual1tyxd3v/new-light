@@ -1,11 +1,85 @@
 .phone {
   height: 35px;
   &__warning,
-  &__link--desktop {
+  &__link--desktop,
+  &__button {
     display: none;
   }
   &__link {
     background-color: #ef4242;
     background-image: url("../img/icon-phone.svg");
   }
+}
+
+@keyframes change-opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .phone {
+    height: 100%;
+    &__button {
+      display: block !important;
+      width: 100%;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      text-align: right;
+      &:hover {
+        color: #ef4242;
+      }
+    }
+    &__link {
+      width: auto;
+      background-size: 21px;
+      background-position: 0 4px;
+      background-color: transparent;
+      padding-left: 31px;
+      background-image: url("../img/icon-phone--desktop.svg");
+    }
+    &__link--desktop {
+      display: block;
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 31.5px;
+      color: #fff;
+    }
+    &__warning{
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 18px;
+      color: #61CE70;
+      justify-content: right;
+      width: 100%;
+      opacity: 1;
+      animation: change-opacity 2s infinite ease;
+      &::before {
+        content: "";
+        display: block;
+        width: 6px;
+        height: 6px;
+        margin-right: 6px;
+        border: 3px solid #61CE70;
+        border-radius: 3px
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
 }

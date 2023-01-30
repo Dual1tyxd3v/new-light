@@ -13,6 +13,10 @@
     line-height: 20px;
     font-weight: 400;
     color: #000;
+    &:hover {
+      background-color: #EF4242;
+      color: #fff;
+    }
   }
 }
 
@@ -30,12 +34,27 @@
     box-shadow: none;
     &__item {
       padding: 25px 20px;
-      font-size: 14px;
+      font-size: 12px;
       letter-spacing: 1.5px;
+      transition: 0.3s transform;
+      &:hover {
+        color:#EF4242;
+        background-color: #fff;
+        transform: scale(1.2);
+      }
     }
     &__list {
       display: flex;
       justify-content: space-evenly;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .navigation {
+    &__item {
+      font-size: 14px;
+      padding: 18px 22px;
     }
   }
 }

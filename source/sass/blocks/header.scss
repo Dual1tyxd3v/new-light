@@ -4,15 +4,14 @@
   top: 0;
   left: 0;
   z-index: 2;
+  min-width: 310px;
   &__wrapper {
     display: flex;
     position: relative;
-    padding: 0 10px;
+    padding: 10px 10px;
   }
   &__logo-wrapper {
-    padding-top: 10px;
     width: 56%;
-    padding-right: 10px;
   }
   &__contacts {
     width: 44%;
@@ -35,7 +34,7 @@
     }
   }
   &__logo img {
-    max-width: 280px;
+   max-width: 280px;
   }
   &__button {
     position: absolute;
@@ -96,6 +95,64 @@
     padding-top: 70px;
     &__button {
       display: none;
+    }
+    &__container {
+      background-color: #000;
+    }
+    &__wrapper {
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__description {
+      display: none;
+    }
+    &__logo-wrapper {
+      max-width: 280px;
+      padding-top: 10px;
+    }
+    &__contacts {
+      width: 56%;
+    }
+    &__contacts-wrapper {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding-top: 56px;
+    &__wrapper {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+    &__description {
+      display: inline;
+      color: #fff;
+      max-width: 242px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 18.2px;
+      letter-spacing: 0;
+      &--desktop {
+        display: inline;
+      }
+    }
+    &__logo {
+      min-width: 280px;
+    }
+    &__logo-wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+      max-width: none;
+    }
+    &__contacts {
+      width: 50%;
+    }
+    &__contacts-wrapper {
+      justify-content: flex-end;
     }
   }
 }

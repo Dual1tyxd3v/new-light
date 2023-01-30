@@ -11,34 +11,37 @@
 
 <body>
   <header class="header">
-    <div class="header__wrapper">
-      <div class="header__logo-wrapper">
-        <a href="index.html" class="header__logo">
-          <picture>
-            <source media="(min-width: 770px)" srcset="./img/logo--white.svg">
-            <img src="./img/logo--black.svg" alt="">
-          </picture>
-        </a>
-        <p class="header__description">Архитектурное освещение<span class="header__description--desktop"> зданий и
-            сооружений по всей России</span></p>
-      </div>
-      <div class="header__contacts">
-        <div class="header__contacts-wrapper">
-          <div class="header__telegram telegram">
-            <p class="telegram__text">Связаться с нами через мессенджеры:</p>
-            <a href="" class="telegram__link icon"></a>
-          </div>
-          <div class="header__phone phone">
-            <p class="phone__warning">Звоните, мы работаем</p>
-            <a href="" class="phone__link icon">
-              <span class="phone__link--desktop">8 (925) 714-51-11</span>
-            </a>
+    <div class="header__container">
+      <div class="header__wrapper">
+        <div class="header__logo-wrapper">
+          <a href="index.html" class="header__logo">
+            <picture>
+              <source media="(min-width: 770px)" srcset="./img/logo--white.svg">
+              <img src="./img/logo--black.svg" alt="">
+            </picture>
+          </a>
+          <p class="header__description">Архитектурное освещение<span class="header__description--desktop"> зданий и
+              сооружений по всей России</span></p>
+        </div>
+        <div class="header__contacts">
+          <div class="header__contacts-wrapper">
+            <div class="header__telegram telegram">
+              <p class="telegram__text">Связаться с нами <br>через мессенджеры:</p>
+              <a href="https://t.me/+79257145111" class="telegram__link icon"></a>
+            </div>
+            <div class="header__phone phone">
+              <p class="phone__warning">Звоните, мы работаем</p>
+              <a href="tel:+79257145111" class="phone__link icon">
+                <span class="phone__link--desktop">8 (925) 714-51-11</span>
+              </a>
+              <button class="phone__button" type="button">Заказать консультацию</button>
+            </div>
           </div>
         </div>
+        <button class="header__button" type="button">
+          <span class="header__burger"></span>
+        </button>
       </div>
-      <button class="header__button" type="button">
-        <span class="header__burger"></span>
-      </button>
     </div>
     <nav class="header__navigation navigation">
       <ul class="navigation__list">
@@ -56,6 +59,9 @@
         </li>
       </ul>
     </nav>
+    <div class="header__intro">
+
+    </div>
   </header>
   <script src="./js/jquery.js"></script>
   <script src="./js/script.js"></script>
