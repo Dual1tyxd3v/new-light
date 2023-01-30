@@ -1,0 +1,10 @@
+.telegram {
+  height: 35px;
+  &__text {
+    display: none;
+  }
+  &__link {
+    background-color: #2ca5e0;
+    background-image: url("../img/icon-telegram.svg");
+  }
+}

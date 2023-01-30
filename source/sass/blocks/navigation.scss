@@ -1,0 +1,41 @@
+.navigation {
+  transform: scaleY(0);
+  transform-origin: top;
+  border-top: 1px solid #EF4242;
+  overflow: hidden;
+  transition: 0.3s all;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+  &__item {
+    padding: 10px 20px;
+    display: inline-block;
+    width: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #000;
+  }
+}
+
+.header--opened .navigation {
+  transform: scaleY(1);
+}
+
+@media (min-width: $tablet-width) {
+  .navigation {
+    transform: scaleY(1);
+    position: fixed;
+    border: 0;
+    top: 0;
+    width: 100%;
+    box-shadow: none;
+    &__item {
+      padding: 25px 20px;
+      font-size: 14px;
+      letter-spacing: 1.5px;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}

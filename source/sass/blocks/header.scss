@@ -1,0 +1,101 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  &__wrapper {
+    display: flex;
+    position: relative;
+    padding: 0 10px;
+  }
+  &__logo-wrapper {
+    padding-top: 10px;
+    width: 56%;
+    padding-right: 10px;
+  }
+  &__contacts {
+    width: 44%;
+  }
+  &__contacts-wrapper {
+    width: 66%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-gap: 6px;
+  }
+  &__description {
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    line-height: 1.3em;
+    &--desktop {
+      display: none;
+    }
+  }
+  &__logo img {
+    max-width: 280px;
+  }
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    width: 34px;
+    height: 34px;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    &:hover {
+      .header__burger,
+      .header__burger::after,
+      .header__burger::before{
+        background-color: #fff;
+      }
+    }
+  }
+  &__burger,
+  &__burger::after,
+  &__burger::before{
+    display: block;
+    height: 3px;
+    width: 24px;
+    border-radius: 3px;
+    background-color: #000;
+  }
+  &__burger::before {
+    content: "";
+    position: absolute;
+    top: 10.5px;
+  }
+  &__burger::after {
+    content: "";
+    position: absolute;
+    bottom: 10.5px;
+  }
+  &--opened {
+    .header__burger {
+      width: 0;
+      &::after {
+        bottom: 15.5px;
+        transform: rotate(45deg);
+      }
+      &::before {
+        top: 15.5px;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    position: static;
+    padding-top: 70px;
+    &__button {
+      display: none;
+    }
+  }
+}

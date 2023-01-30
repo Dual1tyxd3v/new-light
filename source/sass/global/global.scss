@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-size: 22px;
+  background-position: center;
+  border-radius: 4px;
+}

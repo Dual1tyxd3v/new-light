@@ -1,0 +1,11 @@
+.phone {
+  height: 35px;
+  &__warning,
+  &__link--desktop {
+    display: none;
+  }
+  &__link {
+    background-color: #ef4242;
+    background-image: url("../img/icon-phone.svg");
+  }
+}
