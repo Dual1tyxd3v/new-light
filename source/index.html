@@ -49,7 +49,7 @@
           <a href="" class="navigation__item">Услуги</a>
         </li>
         <li>
-          <a href="" class="navigation__item">Виды освещение</a>
+          <a href="" class="navigation__item">Виды освещения</a>
         </li>
         <li>
           <a href="" class="navigation__item">Портфолио</a>
@@ -62,23 +62,35 @@
   </header>
 
   <section class="intro">
-    <div class="intro__container">
-      <img src="./img/m-main-bg.jpg" width="533" height="400" alt="Многоэтажка" class="intro__img">
-      <p class="intro__text">Спроектируем, доставим и установим</p>
-      <h1 class="intro__title cd-headline letters rotate-2">
-        <span>Архитектурное освещение</span>
-        <span class="cd-words-wrapper">
-          <b class="is-visible">для&nbsp;зданий</b>
-          <b>для&nbsp;сооружений</b>
-          <b>для&nbsp;мостов&nbsp;и&nbsp;храмов</b>
-          <b>для&nbsp;домов</b>
-          <b>для&nbsp;коттеджей</b>
-          <b>для&nbsp;улиц&nbsp;и&nbsp;городов</b>
-        </span>
-      </h1>
+    <div class="intro__wrapper">
+      <div class="intro__container">
+        <img src="./img/m-main-bg.jpg" width="533" height="400" alt="Многоэтажка" class="intro__img">
+        <p class="intro__text">Спроектируем, доставим и установим</p>
+        <h1 class="intro__title cd-headline letters rotate-2">
+          <span>Архитектурное<br>освещение</span>
+          <span class="cd-words-wrapper">
+            <b class="is-visible">для&nbsp;зданий</b>
+            <b>для&nbsp;сооружений</b>
+            <b>для&nbsp;мостов&nbsp;и&nbsp;храмов</b>
+            <b>для&nbsp;домов</b>
+            <b>для&nbsp;коттеджей</b>
+            <b>для&nbsp;улиц&nbsp;и&nbsp;городов</b>
+          </span>
+        </h1>
+        <p class="intro__description">Повысим коммерческую привлекательность<br>вашего объекта</p>
+        <p class="intro__subtext">Разработаем светодизайн и проведем светотехнический расчёт</p>
+        <form action="send.php" method="POST" class="intro__form form">
+          <div class="form__field">
+            <label for="phone" class="visually-hidden">Контакный телефон</label>
+            <input type="tel" name="phone" id="phone" class="form__input" placeholder="Введите номер телефона">
+          </div>
+          <button class="form__submit" type="submit">Запросить коммерческое предложение</button>
+        </form>
+      </div>
     </div>
   </section>
-  <script src="./js/jquery-2.1.1.js"></script>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/animated-text.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

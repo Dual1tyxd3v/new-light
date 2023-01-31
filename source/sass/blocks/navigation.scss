@@ -53,9 +53,14 @@
 
 @media (min-width: $desktop-width) {
   .navigation {
+    z-index: 4;
     &__item {
       font-size: 14px;
       padding: 18px 22px;
+    }
+    &__list {
+      max-width: 1140px;
+      margin: 0 auto;
     }
   }
 }

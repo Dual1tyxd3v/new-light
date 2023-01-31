@@ -1,25 +1,148 @@
 .intro {
   background-color: #000;
+  color: #fff;
   &__container {
     padding: 0 5px;
     overflow: hidden;
   }
   &__title {
-    color: #fff;
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 4px;
     line-height: 33.6px;
     font-style: normal;
     text-transform: uppercase;
+    margin-bottom: 16px;
     & b {
       color: #ef4242;
       font-weight: 600;
       letter-spacing: -1px;
     }
   }
+  &__img {
+    padding: 0 10px;
+    margin-bottom: 14px;
+  }
   &__text {
-    color: #fff;
-    transform: translateZ(20px);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  &__description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18.2px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__subtext {
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      display: block;
+      min-width: 12.2px;
+      margin-right: 5px;
+      height: 3px;
+      background-color: #ea3e3e;
+      border-radius: 2px;
+    }
+  }
+  &__form {
+    margin-bottom: 15px;
+    padding: 0 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro {
+    background-image: url("../img/bg-main.png");
+    background-position: 75% 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__img {
+      display: none;
+    }
+    &__container {
+      padding: 0 10px;
+      margin-right: 30%;
+    }
+    &__text {
+      margin-bottom: 20px;
+      text-align: left;
+      font-size: 15px;
+      line-height: 19.5px;
+    }
+    &__title {
+      margin-bottom: 20px;
+      font-size: 38px;
+      line-height: 45.6px;
+      letter-spacing: 8px;
+      & b {
+        letter-spacing: normal;
+      }
+    }
+    &__description {
+      font-size: 18px;
+      line-height: 23.4px;
+      text-align: left;
+    }
+    &__subtext {
+      font-size: 16px;
+      padding: 0;
+      line-height: 24px;
+      letter-spacing: -0.5px;
+      &::before {
+        margin-right: 10px;
+      }
+    }
+    &__form {
+      padding: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background-image: none;
+    position: relative;
+    min-height: 64vh;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 640px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-image: url("../../img/bg-main.png");
+      background-position: bottom right;
+      background-size: cover;
+    }
+    &__wrapper {
+      position: relative;
+      z-index: 4;
+      max-width: 1140px;
+      margin: 0 auto;
+      padding-top: 6vh;
+    }
+    &__description {
+      font-size: 28px;
+      line-height: 36.4px;
+    }
+    &__title {
+      font-size: 43.3px;
+      line-height: 51.96px;
+    }
+    &__text {
+      font-size: 21px;
+      line-height: 27.3px;
+    }
   }
 }
