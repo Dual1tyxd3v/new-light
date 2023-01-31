@@ -73,3 +73,16 @@ function getCursorPosition(ctrl) {
   return CaretPos;
 }
 
+const observer = new IntersectionObserver(entries => {
+  // перебор записей
+  entries.forEach(entry => {
+    // если элемент появился
+    if (entry.isIntersecting) {
+      // добавить ему CSS-класс
+      const className = entry.target.dataset.animation;
+      entry.target.classList.add(className);
+    }
+  });
+});
+const animated = document.querySelectorAll('.js-animated');
+animated.forEach((a) => observer.observe(a));

@@ -33,6 +33,8 @@
     top: 0;
     width: 100%;
     box-shadow: none;
+    z-index: 7;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
     &__item {
       padding: 25px 20px;
       font-size: 12px;
@@ -53,7 +55,6 @@
 
 @media (min-width: $desktop-width) {
   .navigation {
-    z-index: 4;
     &__item {
       font-size: 14px;
       padding: 18px 22px;
