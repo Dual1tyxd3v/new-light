@@ -11,6 +11,9 @@
     border: none;
     border-bottom: 3px solid #B12B2B;
     border-radius: 5px;
+    &--types {
+      min-height: 41px;
+    }
   }
   &__input {
     width: 100%;
@@ -41,6 +44,12 @@
     &__submit--small {
       min-height: 47px;
     }
+    &__submit--types {
+      display: block;
+      padding: 0 24px;
+      width: auto;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -55,6 +64,9 @@
     }
     &__submit {
       width: 40%;
+      &--types {
+        width: auto;
+      }
     }
     &__submit {
       font-size: 14px;

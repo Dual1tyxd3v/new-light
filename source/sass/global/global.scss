@@ -31,6 +31,14 @@ img {
   border-radius: 4px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-width: 310px;
+}
+
 .visually-hidden {
   width: 1px;
   height: 1px;

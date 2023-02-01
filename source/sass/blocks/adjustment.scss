@@ -1,4 +1,6 @@
 .adjustment {
+  position: relative;
+  z-index: 2;
   &__wrapper {
     padding: 50px 10px 40px 10px;
     &:last-child {
