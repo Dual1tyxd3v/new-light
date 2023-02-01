@@ -1,0 +1,41 @@
+.adjustment-item {
+  text-align: center;
+  &__img {
+    max-width: 372px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18.2px;
+    margin-bottom: 16px;
+  }
+  &__number {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .adjustment-item {
+    &__img {
+      margin-bottom: 16px;
+    }
+    position: relative;
+    &__number {
+      display: block;
+      position: absolute;
+      top: -75px;
+      left: -42px;
+      font-family: "Stolzl";
+      font-size: 120px;
+      font-weight: 600;
+      line-height: 120px;
+      color: rgba(239, 66, 66, 0.37);
+      z-index: -1;
+      &--grey {
+        color: #E8E8E8;
+      }
+    }
+  }
+}
