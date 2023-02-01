@@ -68,6 +68,9 @@
   &__item {
     margin-bottom: 8px;
     padding: 8px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &__text {
     position: relative;

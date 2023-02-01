@@ -79,7 +79,7 @@ const observer = new IntersectionObserver(entries => {
     // если элемент появился
     if (entry.isIntersecting) {
       // добавить ему CSS-класс
-      const className = entry.target.dataset.animation;
+      const className = window.screen.width < 770 ? 'fadeInUp' : entry.target.dataset.animation;
       entry.target.classList.add(className);
     }
   });

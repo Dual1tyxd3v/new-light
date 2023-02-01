@@ -1,0 +1,31 @@
+.callback {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 15px;
+  &__wrapper {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .callback {
+    border-radius: 5px;
+    &__wrapper {
+      padding: 15px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .callback {
+    &__wrapper {
+      padding-left: 170px;
+      min-height: 232px;
+      background-image: url("../img/callback-bg.png");
+      background-position: 4% 100%;
+      background-size: 166px 225px;
+    }
+  }
+}
