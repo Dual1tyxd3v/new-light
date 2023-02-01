@@ -30,7 +30,12 @@
     margin-bottom: 15px;
   }
 }
-
+.callback--master {
+  & .form__input {
+    min-height: 47px;
+    padding: 6px 16px;
+  }
+}
 @media (min-width: $tablet-width) {
   .form {
     &__input {

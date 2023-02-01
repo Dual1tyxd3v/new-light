@@ -5,6 +5,12 @@
     line-height: 18.2px;
     margin-bottom: 20px;
   }
+  &__warning {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -13,6 +19,14 @@
       font-size: 18px;
       line-height: 23.4px;
     }
+    &__warning {
+      font-size: 1.5em;
+      line-height: 1;
+    }
+  }
+  .master__callback .modal__title {
+    font-size: 14px;
+    line-height: 1.3em;
   }
 }
 
