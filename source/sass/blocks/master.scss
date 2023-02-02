@@ -74,3 +74,25 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .master {
+    background-image: url("../img/master-bg.jpeg");
+    background-position: center;
+    background-size: cover;
+    &__header {
+      display: flex;
+      align-items: center;
+    }
+    &__title {
+      text-align: left;
+    }
+    &__warning {
+      line-height: 1;
+    }
+    &__text {
+      font-size: 1.6vw;
+      line-height: 1.3em;
+    }
+  }
+}

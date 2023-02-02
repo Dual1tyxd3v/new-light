@@ -54,3 +54,13 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .plan {
+    &__item {
+      &::before {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
