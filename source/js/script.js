@@ -2,6 +2,7 @@ const burger = document.querySelector('.header__button');
 const header = document.querySelector('.header');
 const inputs = document.querySelectorAll('input[type="tel"');
 const portfolioMenuBtns = document.querySelectorAll('.portfolio__menu-item');
+const portfolioContainer = document.querySelector('.portfolio__container');
 
 const PHONE_SCHEME = '+7-___-___-__-__';
 let currentPos = 3;
@@ -35,7 +36,7 @@ inputs.forEach((input) => {
     const letter = e.target.value[currentPos];
     if (e.target.value.length < currentValue.length) {
       currentPos++;
-      currentPos < 3 ? currentPos = 3: null;
+      currentPos < 3 ? currentPos = 3 : null;
       if (currentValue[currentPos] === '-') currentPos--;
       currentValue = (currentValue.slice(0, currentPos) + '_' + currentValue.slice(currentPos + 1)).slice(0, 16);
       e.target.value = currentValue;
@@ -82,7 +83,9 @@ const observer = new IntersectionObserver(entries => {
     // если элемент появился
     if (entry.isIntersecting) {
       // добавить ему CSS-класс
-      const className = window.screen.width < 770 ? 'fadeInUp' : entry.target.dataset.animation;
+      const className = (window.screen.width < 770 && entry.target.dataset.animation !== 'upScale')
+        ? 'fadeInUp'
+        : entry.target.dataset.animation;
       entry.target.classList.add(className);
     }
   });
@@ -94,12 +97,32 @@ animated.forEach((a) => observer.observe(a));
 portfolioMenuBtns.forEach((btn) => {
   btn.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log(e.target)
+    portfolioContainer.classList.add('portfolio__container--animated');
+    setTimeout(() => {
+      portfolioContainer.classList.remove('portfolio__container--animated');
+    }, 100);
+    portfolioMenuBtns.forEach((button) => {
+      button.classList.remove('portfolio__menu-item--active');
+    });
+    e.target.classList.add('portfolio__menu-item--active');
     const index = e.target.dataset.index;
     document.querySelectorAll('.portfolio__link').forEach((link) => {
-      (index === '0' || link.dataset.index === index)
-        ? link.parentElement.classList.remove('hide')
-        : link.parentElement.classList.add('hide');
+      if (index === link.dataset.index) {
+        link.parentElement.classList.remove('portfolio__item--hidden');
+        link.parentElement.classList.add('animated');
+      }
+      if (index !== link.dataset.index) {
+        if (!link.parentElement.classList.contains('portfolio__item--hidden')) {
+          link.parentElement.classList.add('animated');
+          link.parentElement.classList.add('portfolio__item--hidden');
+        }
+      }
+      if (index === '0') {
+        link.parentElement.classList.remove('portfolio__item--hidden');
+      }
+      setTimeout(() => {
+        link.parentElement.classList.remove('animated');
+      }, 100);
     });
   });
 });

@@ -2,6 +2,7 @@
   padding: 20px 20px 10px 20px;
   border-top: 80px solid #fff;
 	margin-top: -80px;
+  background-color: #ccc;
   &__title {
     font-size: 18px;
     font-weight: 700;
@@ -12,6 +13,16 @@
     &--red {
       color: #ef4242;
     }
+  }
+  &__item {
+    position: relative;
+    transition: 0.3s all;
+    opacity: 1;
+    transform: scale3d(1,1,1);
+  }
+  &__item--hidden {
+    transform: scale3d(0, 0, 0);
+    opacity: 0;
   }
   &__text {
     font-size: 16px;
@@ -25,12 +36,17 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-bottom: 20px;
+    & li {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
   &__menu-item {
     padding: 7px 14px;
-    margin-right: 10px;
     font-size: 12px;
     font-weight: 700;
     line-height: 18px;
@@ -44,9 +60,6 @@
       color: #ef4242;
       transform: scale(1.2);
     }
-    &:last-child {
-      margin-right: 0;
-    }
   }
   &__container {
     display: grid;
@@ -55,8 +68,50 @@
   }
   &__link {
     display: block;
+    cursor: pointer;
     padding-bottom: 75%;
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
+  }
+}
+
+.portfolio__item--hidden:not(.animated) {
+  position: absolute;
+}
+
+@media (min-width: $tablet-width) {
+  .portfolio {
+    border-top: 70px solid #fff;
+    margin-top: -70px;
+    padding: 50px 10px;
+    &__container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &__title {
+      font-size: 28px;
+    }
+    &__text {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .portfolio {
+    border-top: 56px solid #fff;
+    margin-top: -56px;
+    &__title {
+      font-size: 38px;
+    }
+    &__text {
+      font-size: 1.4vw;
+    }
+    &__menu-item {
+      font-size: 14px;
+    }
+    &__container {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 }
