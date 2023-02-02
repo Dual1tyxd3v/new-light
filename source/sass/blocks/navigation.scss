@@ -1,4 +1,6 @@
 .navigation {
+  position: absolute;
+  width: 100%;
   transform: scaleY(0);
   transform-origin: top;
   border-top: 1px solid #EF4242;
@@ -22,9 +24,32 @@
 }
 
 .header--opened .navigation {
-  transform: scaleY(1);
+  transform: scale(1);
+  position: relative;
 }
 
+@keyframes show-menu {
+  from {
+    display: none;
+    transform: scaleY(0);
+  }
+  to {
+    display: block;
+    transform: scale(1);
+  }
+}
+@keyframes hide-menu {
+  0% {
+    display: block;
+    transform: scaleY(1);
+  }
+  99% {
+    transform: scale(0);
+  }
+  100% {
+    display: none;
+  }
+}
 @media (min-width: $tablet-width) {
   .navigation {
     transform: scaleY(1);

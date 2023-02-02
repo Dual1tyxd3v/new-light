@@ -1,0 +1,62 @@
+.portfolio {
+  padding: 20px 20px 10px 20px;
+  border-top: 80px solid #fff;
+	margin-top: -80px;
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #232020;
+    &--red {
+      color: #ef4242;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #514f4f;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+  }
+  &__menu-item {
+    padding: 7px 14px;
+    margin-right: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #232020;
+    display: inline-block;
+    transition: 0.3s transform;
+    &--active {
+      color: #ef4242;
+    }
+    &:hover {
+      color: #ef4242;
+      transform: scale(1.2);
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__link {
+    display: block;
+    padding-bottom: 75%;
+    background-size: cover;
+    background-position: center;
+  }
+}

@@ -1,15 +1,17 @@
 const burger = document.querySelector('.header__button');
 const header = document.querySelector('.header');
 const inputs = document.querySelectorAll('input[type="tel"');
+const portfolioMenuBtns = document.querySelectorAll('.portfolio__menu-item');
 
 const PHONE_SCHEME = '+7-___-___-__-__';
 let currentPos = 3;
 let currentValue = '';
-
+// кнопка меню бургер
 burger.addEventListener('click', () => {
   header.classList.toggle('header--opened');
 });
-
+//
+// обработка инпута в форме
 inputs.forEach((input) => {
   input.addEventListener('focus', (e) => {
     if (e.target.value.length === 0) {
@@ -72,7 +74,8 @@ function getCursorPosition(ctrl) {
   }
   return CaretPos;
 }
-
+//
+// отслеживание позиции для запуска анимации элементов
 const observer = new IntersectionObserver(entries => {
   // перебор записей
   entries.forEach(entry => {
@@ -86,3 +89,18 @@ const observer = new IntersectionObserver(entries => {
 });
 const animated = document.querySelectorAll('.js-animated');
 animated.forEach((a) => observer.observe(a));
+//
+// смена карточек в портфолио
+portfolioMenuBtns.forEach((btn) => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log(e.target)
+    const index = e.target.dataset.index;
+    document.querySelectorAll('.portfolio__link').forEach((link) => {
+      (index === '0' || link.dataset.index === index)
+        ? link.parentElement.classList.remove('hide')
+        : link.parentElement.classList.add('hide');
+    });
+  });
+});
+//

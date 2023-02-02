@@ -14,7 +14,7 @@
   }
   &__wrapper {
     position: relative;
-    padding: 80px 10px; //+15
+    padding: 80px 10px;
     z-index: 2;
   }
   &__title {
@@ -93,6 +93,9 @@
     &__text {
       font-size: 1.6vw;
       line-height: 1.3em;
+    }
+    &__wrapper {
+      padding-bottom: 60px;
     }
   }
 }
