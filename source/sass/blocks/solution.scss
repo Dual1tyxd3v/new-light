@@ -1,0 +1,52 @@
+.solution {
+  padding: 20px;
+  text-align: center;
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #232020;
+    &::before {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-size: 60px;
+      margin: 0 auto 15px auto;
+    }
+    &--1::before {
+      background-image: url("../../img/icon-solution-1.svg");
+    }
+    &--2::before {
+      background-image: url("../../img/icon-solution-2.svg");
+    }
+    &--3::before {
+      background-image: url("../../img/icon-solution-3.svg");
+    }
+    &--4::before {
+      background-image: url("../../img/icon-solution-4.svg");
+    }
+    &--5::before {
+      background-image: url("../../img/icon-solution-5.svg");
+    }
+    &--6::before {
+      background-image: url("../../img/icon-solution-6.svg");
+    }
+  }
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3em;
+    color: #514f4f;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .solution {
+    &__title {
+      font-size: 18px;
+    }
+  }
+}

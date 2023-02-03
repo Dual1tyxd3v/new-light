@@ -1,0 +1,38 @@
+.solutions {
+  padding: 60px 10px;
+  &__title {
+    font-size: 18px;
+    line-height: 1.3em;
+    font-weight: 700;
+    color: #232020;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    &--red {
+      color: #ef4242;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .solutions {
+    &__title {
+      font-size: 28px;
+    }
+    &__container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .solutions {
+    &__title {
+      font-size: 38px;
+    }
+    &__container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
