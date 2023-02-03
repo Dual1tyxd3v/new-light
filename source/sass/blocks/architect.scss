@@ -1,0 +1,101 @@
+.architect {
+  background-color: #000;
+  &__wrapper {
+    padding: 60px 10px;
+  }
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3em;
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: -0.4px;
+    &--red {
+      color: #ef4242;
+    }
+  }
+  &__text {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    color: #fff;
+    &::before {
+      display: block;
+      content: "";
+      width: 60px;
+      height: 60px;
+      background-size: 60px;
+      margin: 0 auto 16px auto;
+    }
+    &--1::before {
+      background-image: url("../img/icon-architect-1.svg");
+    }
+    &--2::before {
+      background-image: url("../img/icon-architect-2.svg");
+    }
+    &--3::before {
+      background-image: url("../img/icon-architect-3.svg");
+    }
+    &--4::before {
+      background-image: url("../img/icon-architect-4.svg");
+    }
+  }
+  &__services {
+    display: grid;
+    grid-gap: 20px 0px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 25px;
+  }
+  &__img {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .architect {
+    &__img {
+      display: none;
+    }
+    background-image: url("../img/architect-bg.jpg");
+    background-size: 40% auto;
+    background-position: center right;
+    &__wrapper {
+      margin-right: 40%;
+    }
+    &__title {
+      font-size: 28px;
+    }
+    &__text {
+      display: flex;
+      align-items: center;
+      padding: 5px 0;
+      text-align: left;
+      &::before {
+        min-width: 60px;
+        margin-bottom: 0;
+        margin-right: 10px;
+      }
+    }
+    &__services {
+
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .architect {
+    &__container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+    &__title {
+      font-size: 38px;
+    }
+    &__text {
+      font-size: 13.3px;
+
+    }
+  }
+}

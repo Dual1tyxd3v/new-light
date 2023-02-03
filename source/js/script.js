@@ -42,6 +42,14 @@ inputs.forEach((input) => {
     currentPos = e.target.value === PHONE_SCHEME
       ? 3 : getCursorPosition(e.target) - 1;
     const letter = e.target.value[currentPos];
+    if (letter.match(/\D/g)) {
+      e.target.value = currentValue;
+      setTimeout(() => {
+        e.target.selectionStart = currentPos;
+        e.target.selectionEnd = currentPos;
+      }, 1);
+      return;
+    }
     if (e.target.value.length < currentValue.length) {
       currentPos++;
       currentPos < 3 ? currentPos = 3 : null;

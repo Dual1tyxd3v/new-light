@@ -2,7 +2,7 @@
   &__title {
     font-size: 14px;
     font-weight: 400;
-    line-height: 18.2px;
+    line-height: 1.3em;
     margin-bottom: 20px;
   }
   &__warning {
@@ -11,8 +11,28 @@
     line-height: 18px;
     margin-bottom: 20px;
   }
+  &__subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.3em;
+    text-align: center;
+  }
 }
-
+.callback--architect .modal {
+  &__warning {
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+  }
+  &__title {
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  &__subtitle {
+    color: #fff;
+  }
+}
 @media (min-width: $tablet-width) {
   .modal {
     &__title {
@@ -27,6 +47,10 @@
   .master__callback .modal__title {
     font-size: 14px;
     line-height: 1.3em;
+  }
+  .callback--architect .modal__title {
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 }
 

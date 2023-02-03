@@ -30,10 +30,19 @@
     margin-bottom: 15px;
   }
 }
-.callback--master {
+.callback--master,
+.callback--architect {
   & .form__input {
     min-height: 47px;
     padding: 6px 16px;
+  }
+}
+.callback--architect {
+  & .form {
+    margin-bottom: 20px;
+  }
+  & .form__submit {
+    min-height: 47px;
   }
 }
 @media (min-width: $tablet-width) {
@@ -54,6 +63,20 @@
       padding: 0 24px;
       width: auto;
       margin: 0 auto;
+    }
+  }
+  .callback--architect .form {
+    display: flex;
+    margin-bottom: 15px;
+    &__field {
+      width: 40%;
+      margin-right: 10px;
+      margin-bottom: 0;
+    }
+    &__submit {
+      height: 47px;
+      font-size: 14px;
+      width: 50%;
     }
   }
 }

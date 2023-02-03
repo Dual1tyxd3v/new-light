@@ -17,6 +17,10 @@
       padding: 20px;
     }
   }
+  &--architect {
+    background-color: transparent;
+    padding: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {

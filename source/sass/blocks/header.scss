@@ -5,6 +5,7 @@
   left: 0;
   z-index: 7;
   min-width: 310px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
   &__wrapper {
     display: flex;
     position: relative;
@@ -98,6 +99,7 @@
   .header {
     position: static;
     padding-top: 70px;
+    box-shadow: none;
     &__button {
       display: none;
     }
