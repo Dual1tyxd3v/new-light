@@ -96,6 +96,14 @@
     }
     &__wrapper {
       padding-bottom: 60px;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+    &__callback {
+      margin-bottom: 0;
+    }
+    &__header {
+      margin-bottom: 35px;
     }
   }
 }
