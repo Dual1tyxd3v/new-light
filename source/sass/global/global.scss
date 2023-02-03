@@ -21,7 +21,9 @@ img {
   width: 100%;
   height: auto;
 }
-
+body {
+  min-width: 310px;
+}
 .icon {
   display: inline-block;
   width: 35px;
