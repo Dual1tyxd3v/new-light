@@ -61,9 +61,14 @@
   .contacts {
     &__description {
       width: 62.94%;
+      margin-right: 10px;
     }
     &__contact {
       width: 37.01%;
+    }
+    &__wrapper {
+      max-width: 1140px;
+      margin: 0 auto;
     }
   }
 }

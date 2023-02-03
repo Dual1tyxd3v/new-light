@@ -33,6 +33,12 @@
     color: #fff;
   }
 }
+.catalog__callback .modal {
+  &__warning {
+    line-height: 1.3em;
+    text-transform: uppercase;
+  }
+}
 @media (min-width: $tablet-width) {
   .modal {
     &__title {

@@ -29,6 +29,15 @@
   &__field {
     margin-bottom: 15px;
   }
+  &__submit-bg::before {
+    display: block;
+    content: "";
+    width: 13px;
+    height: 14px;
+    background-image: url("../img/icon-catalog.svg");
+    background-size: 13px 14px;
+    margin-right: 5px;
+  }
 }
 .callback--master,
 .callback--architect {
@@ -43,6 +52,27 @@
   }
   & .form__submit {
     min-height: 47px;
+  }
+}
+.catalog__callback .form {
+  &__input {
+    min-height: 47px;
+    padding: 6px 16px;
+  }
+  &__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  & label {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    color: #707070;
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: $tablet-width) {

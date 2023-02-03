@@ -1,6 +1,6 @@
 const burger = document.querySelector('.header__button');
 const header = document.querySelector('.header');
-const inputs = document.querySelectorAll('input[type="tel"');
+const inputs = document.querySelectorAll('input[name="phone"]');
 const portfolioMenuBtns = document.querySelectorAll('.portfolio__menu-item');
 const portfolioContainer = document.querySelector('.portfolio__container');
 const portfolioCards = document.querySelectorAll('.portfolio__link');
