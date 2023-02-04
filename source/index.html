@@ -775,26 +775,27 @@
         <div class="popup__content-wrapper"></div>
       </div>
     </div>
-    <div class="modal-cb">
+    <div class="modal-cb hide">
       <div class="modal-cb__wrapper">
-        <button class="modal-cb__btn" type="button"></button>
-          <div class="modal-cb__modal modal">
-            <p class="modal__warning">Проконсультируем Вас</p>
-            <p class="modal__title">по всем вопросам, просто впишите Ваш телефон</p>
-            <form action="send.php" class="modal__form form">
-              <div class="form__field">
-                <label for="phone5">Контактный телефон</label>
-                <input type="tel" name="phone" id="phone5" class="form__input form__input--small"
-                  placeholder="Введите номер телефона">
-              </div>
-              <button class="form__submit" type="submit">Заказать
-                Консультацию</button>
-            </form>
-            <p class="modal__manager">Менеджер Дмитрий перезвонит по указанному номеру в течение 5 минут</p>
-            <p class="modal__or">Или</p>
-            <a href="tel:+79257145111" class="modal__phone">8 (925) 714-51-11</a>
-            <a href="https://api.whatsapp.com/send?phone=+79257145111" class="modal__whatsApp"></a>
-          </div>
+        <div class="modal-cb__modal modal">
+          <button class="modal-cb__btn" type="button"></button>
+          <p class="modal__warning">Проконсультируем Вас</p>
+          <p class="modal__title">по всем вопросам, просто впишите Ваш телефон</p>
+          <form action="send.php" class="modal__form form">
+            <div class="form__field">
+              <label for="phone5" class="visually-hidden">Контактный телефон</label>
+              <input type="tel" name="phone" id="phone5" class="form__input form__input--small"
+                placeholder="Введите номер телефона">
+            </div>
+            <button class="form__submit" type="submit">Заказать
+              Консультацию</button>
+          </form>
+          <p class="modal__manager">Менеджер Дмитрий перезвонит по указанному номеру в течение 5 минут</p>
+          <p class="modal__manager modal__manager--big">ИЛИ</p>
+          <a href="tel:+79257145111" class="modal__phone">8 (925) 714-51-11</a>
+          <a href="https://api.whatsapp.com/send?phone=+79257145111" class="contacts-f__telegram">Задайте вопрос в<span
+            class="contacts-f__telegram--icon">WhatsApp</span></a>
+        </div>
       </div>
     </div>
   </section>

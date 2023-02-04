@@ -75,6 +75,19 @@
     margin-bottom: 10px;
   }
 }
+
+.modal-cb .form {
+  &__input {
+    min-height: 47px;
+  }
+  &__field {
+    margin-bottom: 10px;
+  }
+  &__submit {
+    margin-bottom: 10px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form {
     &__input {
