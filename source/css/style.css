@@ -2173,6 +2173,8 @@ xrotate-2
   display: inline-block;
   line-height: 1.5;
   color: #fff; }
+  .navigation-f__item:hover {
+    color: #ef4242; }
 
 .navigation-f__list {
   margin-bottom: 15px; }

@@ -11,6 +11,9 @@
     display: inline-block;
     line-height: 1.5;
     color: #fff;
+    &:hover {
+      color: #ef4242;
+    }
   }
   &__list {
     margin-bottom: 15px;
