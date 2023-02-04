@@ -275,13 +275,24 @@ sliderWrapper.addEventListener('click', (e) => {
 forms.forEach(form => {
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const data = new FormData(e.target);
+
+    const currentForm = e.target;
+    const phone = currentForm.querySelector('input[name=phone]');
+    if (phone.value.includes('_')) {
+      form.querySelector('input[name="phone"]').focus();
+      return;
+    }
+    phone.value = phone.value.replace(/\D/g, '');
+    const data = new FormData(currentForm);
+
+    currentForm.querySelector('button').setAttribute('disabled', true);
     await fetch('./js/send.php', {
       method: 'POST', body: data
     })
       .then(res => {
         if (res.ok) {
-          console.log('good');
+          currentForm.querySelector('button').setAttribute('disabled', false);
+          window.location = './thanks.html';
         }
       })
       .catch(e => console.log(e.message));
