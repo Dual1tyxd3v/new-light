@@ -5,7 +5,7 @@
   transform-origin: top;
   border-top: 1px solid #EF4242;
   overflow: hidden;
-  transition: 0.3s all;
+  transition: 0.3s transform;
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
   background-color: #fff;
   &__item {
@@ -34,7 +34,7 @@
     position: fixed;
     border: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 7;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
     &__item {

@@ -51,6 +51,11 @@ navigationBtns.forEach((btn) => {
   })
 });
 //
+// закрытие меню при изменении vw
+window.addEventListener('resize', () => {
+  header.classList.remove('header--opened');
+});
+// 
 // обработка инпута в форме
 inputs.forEach((input) => {
   input.addEventListener('focus', (e) => {

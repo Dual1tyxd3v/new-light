@@ -9,7 +9,9 @@
   &__wrapper {
     display: flex;
     position: relative;
+    align-items: center;
     padding: 10px 0;
+    height: 80px;
   }
   &__logo-wrapper {
     width: 56%;
@@ -112,6 +114,7 @@
     &__wrapper {
       justify-content: space-between;
       align-items: center;
+      height: 70px;
     }
     &__description {
       display: none;
@@ -137,6 +140,7 @@
       max-width: 1140px;
       margin: 0 auto;
       z-index: 4;
+      height: 56px;
     }
     &__description {
       display: inline;
