@@ -12,10 +12,32 @@ const sliderCounter = document.querySelector('.popup__counter');
 const sliderTitle = document.querySelector('.popup__title');
 const sliderWrapper = document.querySelector('.popup__content-wrapper');
 const navigationBtns = document.querySelectorAll('.navigation__item');
+const modalBtn = document.querySelector('.modal-cb__btn');
+const modal = document.querySelector('.modal-cb');
+const openModal = document.querySelectorAll('.js-modal-btn');
 
 const PHONE_SCHEME = '+7-___-___-__-__';
 let currentPos = 3;
 let currentValue = '';
+
+openModal.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    modal.classList.add('js-animated');
+    setTimeout(() => {
+      modal.classList.remove('modal-cb--closed');
+    }, 1);
+
+  });
+});
+
+modalBtn.addEventListener('click', () => {
+  modal.classList.add('modal-cb--closed');
+  setTimeout(() => {
+    modal.classList.remove('js-animated');
+  }, 900);
+});
+
+
 // кнопка меню бургер
 burger.addEventListener('click', () => {
   header.classList.toggle('header--opened');

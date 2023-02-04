@@ -7,6 +7,14 @@
   min-width: 310px;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  transition: all 1s;
+  &--closed {
+    opacity: 0;
+    &:not(.js-animated) {
+      display: none;
+    }
+  }
   &__wrapper {
     position: fixed;
     top: 50%;

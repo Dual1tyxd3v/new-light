@@ -1,5 +1,5 @@
 .contacts {
-  border-top: 80px solid #fff;
+  border-top: 80px solid transparent;
 	margin-top: -80px;
   padding: 80px 20px;
   &__sup-title {
@@ -36,7 +36,7 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    border-top: 70px solid #fff;
+    border-top: 70px solid transparent;
     margin-top: -70px;
     &__sup-title {
       font-size: 24px;
@@ -63,7 +63,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    border-top: 56px solid #fff;
+    border-top: 56px solid transparent;
     margin-top: -56px;
     &__description {
       width: 62.94%;

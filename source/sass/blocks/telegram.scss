@@ -6,6 +6,9 @@
   &__link {
     background-color: #2ca5e0;
     background-image: url("../img/icon-telegram.svg");
+    &:hover {
+      opacity: 0.9;
+    }
   }
 }
 

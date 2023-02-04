@@ -13,6 +13,9 @@
     border-radius: 5px;
     &--types {
       min-height: 41px;
+      &:hover {
+        background-color: #B12B2B;
+      }
     }
   }
   &__input {
