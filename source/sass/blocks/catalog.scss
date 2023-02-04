@@ -49,12 +49,103 @@
       background-image: url("../img/catalog-advices.svg");
     }
   }
+  &__img-wrapper {
+    margin: 0 0px -8px 0;
+  }
   &__img {
-    margin: 0 -20px -15px 0;
+    width: 85%;
   }
   &__callback {
     border-radius: 5px;
     padding: 20px;
     color: #232020;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 80px 20px;
+    &__text,
+    &__title {
+      font-size: 24px;
+    }
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+    &__description {
+      width: 47%;
+    }
+    &__callback {
+      padding: 40px;
+    }
+    &__callback-wrapper {
+      width: 53%;
+    }
+    &__sub-title {
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+    &__item {
+      display: flex;
+      text-align: left;
+      &::before {
+        min-width: 60px;
+        margin-bottom: 0;
+        margin-right: 10px;
+      }
+    }
+    &__list {
+      margin-bottom: 90px;
+    }
+    &__img-wrapper {
+      margin: 0 -20px -20px 0;
+      z-index: 4;
+      position: relative;
+    }
+    &__img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    background-image: url("../img/catalog-bg.jpg");
+    background-position: top left;
+    background-size: cover;
+    &__text {
+      font-size: 28px;
+    }
+    &__wrapper {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__sub-title {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+    &__item {
+      font-size: 14px;
+      align-items: center;
+    }
+    &__description {
+      width: 60%;
+      padding: 10px;
+    }
+    &__callback-wrapper {
+      padding: 25px 10px;
+      width: 40%;
+    }
+    &__list {
+      margin-bottom: 70px;
+    }
+    &__img-wrapper {
+      margin: 0 -40px -70px 0;
+    }
   }
 }

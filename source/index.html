@@ -573,7 +573,7 @@
     </div>
   </section>
 
-  <section class="architect" id="contacts">
+  <section class="architect">
     <div class="architect__container">
       <div class="architect__wrapper">
         <h2 class="architect__title js-animated" data-animation="fadeInLeft">
@@ -622,7 +622,7 @@
     </div>
   </section>
 
-  <section class="contacts js-animated" data-animation="fadeInUp">
+  <section class="contacts js-animated" data-animation="fadeInUp" id="contacts">
     <div class="contacts__wrapper">
       <p class="contacts__sup-title">Компания Новый Свет Инжиниринг</p>
       <h2 class="contacts__title">
@@ -670,42 +670,49 @@
 
   <section class="catalog">
     <div class="catalog__wrapper">
-      <p class="catalog__text">Получите полный каталог</p>
-      <h2 class="catalog__title">С примерами объектов</h2>
-      <div class="catalog__description">
-        <h4 class="catalog__sub-title">В каталоге вы увидите:</h4>
-        <div class="catalog__list">
-          <p class="catalog__item catalog__item--examples">Примеры выполненных работ по освещению</p>
-          <p class="catalog__item catalog__item--advices">Советы по правильному выбору освещения</p>
+      <p class="catalog__text js-animated" data-animation="fadeInUp">Получите полный каталог</p>
+      <h2 class="catalog__title js-animated" data-animation="fadeInUp">С примерами объектов</h2>
+      <div class="catalog__container">
+        <div class="catalog__description js-animated" data-animation="fadeInRight">
+          <h4 class="catalog__sub-title">В каталоге вы увидите:</h4>
+          <div class="catalog__list">
+            <p class="catalog__item catalog__item--examples">Примеры выполненных работ по освещению</p>
+            <p class="catalog__item catalog__item--advices">Советы по правильному выбору освещения</p>
+          </div>
+          <div class="catalog__img-wrapper">
+            <picture>
+              <img src="./img/catalog-img.webp" alt="Каталог" class="catalog__img">
+            </picture>
+          </div>
         </div>
-        <picture>
-          <img src="./img/catalog-img.webp" alt="Каталог" class="catalog__img">
-        </picture>
-      </div>
-      <div class="catalog__callback callback">
-        <div class="callback__modal modal">
-          <p class="modal__warning">Оставьте свои контактные
-            данные</p>
-          <p class="modal__title">и мы пришлем Вам полный
-            каталог лучших проектов нашей компании в течение 5 минут</p>
-          <form action="send.php" class="modal__form form">
-            <div class="form__field">
-              <label for="name">Ваше имя</label>
-              <input type="tel" name="name" id="name" class="form__input form__input--small"
-                placeholder="Введите ваше имя">
+        <div class="catalog__callback-wrapper js-animated" data-animation="fadeInLeft">
+          <div class="catalog__callback callback">
+            <div class="callback__modal modal">
+              <p class="modal__warning">Оставьте свои контактные
+                данные</p>
+              <p class="modal__title">и мы пришлем Вам полный
+                каталог лучших проектов нашей компании в течение 5 минут</p>
+              <form action="send.php" class="modal__form form">
+                <div class="form__field">
+                  <label for="name">Ваше имя</label>
+                  <input type="tel" name="name" id="name" class="form__input form__input--small"
+                    placeholder="Введите ваше имя">
+                </div>
+                <div class="form__field">
+                  <label for="email">Ваш E-mail</label>
+                  <input type="tel" name="email" id="email" class="form__input form__input--small"
+                    placeholder="Введите ваш e-mail">
+                </div>
+                <div class="form__field">
+                  <label for="phone4">Контактный телефон <span style="color: #ef4242">*</span></label>
+                  <input type="tel" name="phone" id="phone4" class="form__input form__input--small"
+                    placeholder="Введите номер телефона">
+                </div>
+                <button class="form__submit" type="submit"><span class="form__submit-bg"></span>Заказать
+                  Каталог</button>
+              </form>
             </div>
-            <div class="form__field">
-              <label for="email">Ваш E-mail</label>
-              <input type="tel" name="email" id="email" class="form__input form__input--small"
-                placeholder="Введите ваш e-mail">
-            </div>
-            <div class="form__field">
-              <label for="phone4">Контактный телефон <span style="color: #ef4242">*</span></label>
-              <input type="tel" name="phone" id="phone4" class="form__input form__input--small"
-                placeholder="Введите номер телефона">
-            </div>
-            <button class="form__submit" type="submit"><span class="form__submit-bg"></span>Заказать Каталог</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>

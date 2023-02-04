@@ -109,6 +109,11 @@
       width: 50%;
     }
   }
+  .catalog__callback .form {
+    & label {
+      font-size: 16px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -130,5 +135,8 @@
       font-size: 14px;
       line-height: 14px;
     }
+  }
+  .catalog__callback .form .form__field {
+    margin-bottom: 15px;
   }
 }

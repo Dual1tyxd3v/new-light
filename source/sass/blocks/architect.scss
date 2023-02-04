@@ -1,6 +1,4 @@
 .architect {
-  border-top: 80px solid #fff;
-	margin-top: -80px;
   background-color: #000;
   &__wrapper {
     padding: 60px 10px;
@@ -56,8 +54,6 @@
 
 @media (min-width: $tablet-width) {
   .architect {
-    border-top: 70px solid #fff;
-    margin-top: -70px;
     &__img {
       display: none;
     }
@@ -90,8 +86,6 @@
 
 @media (min-width: $desktop-width) {
   .architect {
-    border-top: 56px solid #fff;
-    margin-top: -56px;
     &__container {
       max-width: 1140px;
       margin: 0 auto;
