@@ -15,11 +15,13 @@ const navigationBtns = document.querySelectorAll('.navigation__item');
 const modalBtn = document.querySelector('.modal-cb__btn');
 const modal = document.querySelector('.modal-cb');
 const openModal = document.querySelectorAll('.js-modal-btn');
+const forms = document.querySelectorAll('form');
 
 const PHONE_SCHEME = '+7-___-___-__-__';
 let currentPos = 3;
 let currentValue = '';
 
+// открыте и закрытие модального окна
 openModal.forEach((btn) => {
   btn.addEventListener('click', () => {
     modal.classList.add('js-animated');
@@ -36,8 +38,7 @@ modalBtn.addEventListener('click', () => {
     modal.classList.remove('js-animated');
   }, 900);
 });
-
-
+//
 // кнопка меню бургер
 burger.addEventListener('click', () => {
   header.classList.toggle('header--opened');
@@ -270,3 +271,19 @@ sliderWrapper.addEventListener('click', (e) => {
   sliderWrapper.classList.toggle('popup__content-wrapper--scale');
 })
 //
+
+forms.forEach(form => {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    await fetch('./js/send.php', {
+      method: 'POST', body: data
+    })
+      .then(res => {
+        if (res.ok) {
+          console.log('good');
+        }
+      })
+      .catch(e => console.log(e.message));
+  });
+});
