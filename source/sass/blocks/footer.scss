@@ -1,0 +1,63 @@
+.footer {
+  padding: 10px;
+  padding-top: 22px;
+  background-color: #232020;
+  color: #fff;
+  &__description {
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 1.3em;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  &__logo{
+    margin-bottom: 5px;
+    & img {
+      max-width: 300px;
+    }
+  }
+  &__contacts {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__logo {
+      width: 32%;
+      margin: 0;
+      padding-top: 10px;
+
+    }
+    &__description {
+      width: 68%;
+      padding-left: 5%;
+    }
+    &__contacts {
+      width: 50%;
+    }
+    &__navigation {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    &__wrapper {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+    &__description {
+      font-size: 16px;
+    }
+  }
+}

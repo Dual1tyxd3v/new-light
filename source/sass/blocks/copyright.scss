@@ -1,0 +1,38 @@
+.copyright {
+  border-top: 1px dashed #e8e8e8;
+  padding-top: 20px;
+  &__title {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Roboto';
+    line-height: 1.3em;
+  }
+  &__requisites {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    &__requisites {
+      display: block;
+      font-size: 10px;
+    }
+    &__title {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    &__title,
+    &__requisites {
+      font-size: 12px;
+    }
+  }
+}

@@ -11,6 +11,7 @@ const sliderleftBtn = document.querySelector('.popup__control--left');
 const sliderCounter = document.querySelector('.popup__counter');
 const sliderTitle = document.querySelector('.popup__title');
 const sliderWrapper = document.querySelector('.popup__content-wrapper');
+const navigationBtns = document.querySelectorAll('.navigation__item');
 
 const PHONE_SCHEME = '+7-___-___-__-__';
 let currentPos = 3;
@@ -18,6 +19,13 @@ let currentValue = '';
 // кнопка меню бургер
 burger.addEventListener('click', () => {
   header.classList.toggle('header--opened');
+});
+//
+// закрытие меню по клику на навигацию
+navigationBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    header.classList.remove('header--opened');
+  })
 });
 //
 // обработка инпута в форме

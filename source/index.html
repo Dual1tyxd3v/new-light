@@ -718,6 +718,52 @@
     </div>
   </section>
 
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <section class="footer__content">
+        <a href="index.html" class="header__logo footer__logo">
+          <img src="./img/logo--white.svg" alt="">
+        </a>
+        <p class="footer__description">
+          Компания на рынке архитектурно-художественного освещения уже более 10 лет, за это время успешно реализовано
+          более 200 проектов на всей территории РФ. Мы умеем решать самые сложные задачи!
+        </p>
+        <div class="footer__contacts contacts-f">
+          <h4 class="contacts-f__title">С нами можно связаться</h4>
+          <a href="tel:+79257145111" class="contacts-f__item contacts-f__item--phone">8 (925) 714-51-11</a>
+          <a href="mailto: info@arh-moscow.ru" class="contacts-f__item contacts-f__item--mail">info@arh-moscow.ru</a>
+          <a href="" class="contacts-f__telegram">Задайте вопрос в<span
+              class="contacts-f__telegram--icon">Telegram</span></a>
+          <p class="contacts-f__item contacts-f__item--time">Режим работы: Пн - Пт с 09:00 до 18:00</p>
+        </div>
+        <div class="footer__navigation navigation-f">
+          <h3 class="navigation-f__title">Навигация по сайту</h3>
+          <ul class="navigation-f__list">
+            <li>
+              <a href="index.html" class="navigation-f__item">На главную</a>
+            </li>
+            <li>
+              <a href="#services" class="navigation-f__item">Услуги</a>
+            </li>
+            <li>
+              <a href="#types" class="navigation-f__item">Виды освещения</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="navigation-f__item">Портфолио</a>
+            </li>
+            <li>
+              <a href="#contacts" class="navigation-f__item">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__copyright copyright">
+        <h4 class="copyright__title">© ООО "Новый Свет Инжиниринг" 2023 г. Все права защищены.</h4>
+        <p class="copyright__requisites">ИНН: 9725095119 ОГРН: 1227700562220</p>
+      </section>
+    </div>
+  </footer>
+
   <section class="__hidden">
     <div class="popup hide">
       <button class="popup__btn"></button>
@@ -727,6 +773,28 @@
       <button type="button" class="popup__control popup__control--left"></button>
       <div class="popup__content">
         <div class="popup__content-wrapper"></div>
+      </div>
+    </div>
+    <div class="modal-cb">
+      <div class="modal-cb__wrapper">
+        <button class="modal-cb__btn" type="button"></button>
+          <div class="modal-cb__modal modal">
+            <p class="modal__warning">Проконсультируем Вас</p>
+            <p class="modal__title">по всем вопросам, просто впишите Ваш телефон</p>
+            <form action="send.php" class="modal__form form">
+              <div class="form__field">
+                <label for="phone5">Контактный телефон</label>
+                <input type="tel" name="phone" id="phone5" class="form__input form__input--small"
+                  placeholder="Введите номер телефона">
+              </div>
+              <button class="form__submit" type="submit">Заказать
+                Консультацию</button>
+            </form>
+            <p class="modal__manager">Менеджер Дмитрий перезвонит по указанному номеру в течение 5 минут</p>
+            <p class="modal__or">Или</p>
+            <a href="tel:+79257145111" class="modal__phone">8 (925) 714-51-11</a>
+            <a href="https://api.whatsapp.com/send?phone=+79257145111" class="modal__whatsApp"></a>
+          </div>
       </div>
     </div>
   </section>
