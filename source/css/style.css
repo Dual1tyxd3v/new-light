@@ -22,6 +22,12 @@
   font-display: swap;
   src: url("../fonts/Stolzl-Bold.woff2"); }
 
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.woff"); }
+
 *,
 *::after,
 *::before {
