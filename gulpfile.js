@@ -8,6 +8,8 @@ const sync = require("browser-sync").create();
 const csso = require("gulp-csso");
 const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
+const webP = require("gulp-webp");
+const jsMin = require("gulp-jsmin");
 
 // Styles
 
@@ -19,10 +21,11 @@ const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    /* .pipe(csso())
-    .pipe(rename("style.min.css")) */
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
 }
 
@@ -35,8 +38,49 @@ const imagz = () => {
       imagemin.mozjpeg({progressive: false}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("source/nImg"))
+    .pipe(gulp.dest("build/img"))
 }
+
+const webPIMG = () => {
+  return gulp.src("source/img/*.{jpg,png}")
+    .pipe(webP({quality: 90}))
+    .pipe(gulp.dest("build/img"));
+}
+
+const js = () => {
+  return gulp.src("source/js/*.js")
+    .pipe(gulp.dest("build/js"))
+    .pipe(jsMin())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"));
+}
+
+const copyHTML = () => {
+  return gulp.src("source/*.html")
+  .pipe(gulp.dest("build"));
+}
+
+const copyFonts = () => {
+  return gulp.src("source/fonts/*.{woff,woff2}")
+  .pipe(gulp.dest("build/fonts"));
+}
+
+const copyWebp = () => {
+  return gulp.src("source/img/*.webp")
+  .pipe(gulp.dest("build/img"));
+}
+
+const build = () => {
+  styles();
+  js();
+  imagz();
+  webPIMG();
+  copyWebp();
+  copyHTML();
+  copyFonts();
+}
+
+exports.build = build;
 
 exports.imagz = imagz;
 // Server
@@ -63,5 +107,5 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, server, watcher, imagz
+  styles, server, watcher, imagz, build
 );

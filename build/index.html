@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Lights</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body id="main">
+  <header class="header">
+    <div class="header__container">
+      <div class="header__wrapper">
+        <div class="header__logo-wrapper">
+          <a href="index.html" class="header__logo">
+            <picture>
+              <source media="(min-width: 770px)" srcset="./img/logo--white.svg">
+              <img src="./img/logo--black.svg" alt="">
+            </picture>
+          </a>
+          <p class="header__description">Архитектурное освещение<span class="header__description--desktop"> зданий и
+              сооружений по всей России</span></p>
+        </div>
+        <div class="header__contacts">
+          <div class="header__contacts-wrapper">
+            <div class="header__telegram telegram">
+              <p class="telegram__text">Связаться с нами <br>через мессенджеры:</p>
+              <a href="https://t.me/+79257145111" class="telegram__link icon"></a>
+            </div>
+            <div class="header__phone phone">
+              <p class="phone__warning">Звоните, мы работаем</p>
+              <a href="tel:+79257145111" class="phone__link icon">
+                <span class="phone__link--desktop">8 (925) 714-51-11</span>
+              </a>
+              <button class="phone__button js-modal-btn" type="button">Заказать консультацию</button>
+            </div>
+          </div>
+        </div>
+        <button class="header__button" type="button">
+          <span class="header__burger"></span>
+        </button>
+      </div>
+    </div>
+    <nav class="header__navigation navigation">
+      <ul class="navigation__list">
+        <li>
+          <a href="#services" class="navigation__item">Услуги</a>
+        </li>
+        <li>
+          <a href="#types" class="navigation__item">Виды освещения</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="navigation__item">Портфолио</a>
+        </li>
+        <li>
+          <a href="#contacts" class="navigation__item">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <div class="intro__wrapper">
+      <div class="intro__container">
+        <img src="./img/m-main-bg.webp" width="533" height="400" alt="Многоэтажка" class="intro__img">
+        <p class="intro__text">Спроектируем, доставим и установим</p>
+        <h1 class="intro__title cd-headline letters rotate-2">
+          <span>Архитектурное<br>освещение<br></span>
+          <span class="cd-words-wrapper">
+            <b class="is-visible">для&nbsp;зданий</b>
+            <b>для&nbsp;сооружений</b>
+            <b>для&nbsp;мостов&nbsp;и&nbsp;храмов</b>
+            <b>для&nbsp;домов</b>
+            <b>для&nbsp;коттеджей</b>
+            <b>для&nbsp;улиц&nbsp;и&nbsp;городов</b>
+          </span>
+        </h1>
+        <p class="intro__description">Повысим коммерческую привлекательность<br>вашего объекта</p>
+        <p class="intro__subtext">Разработаем светодизайн и проведем светотехнический расчёт</p>
+        <form action="send.php" method="POST" class="intro__form form">
+          <div class="form__field">
+            <label for="phone" class="visually-hidden">Контакный телефон</label>
+            <input type="tel" name="phone" id="phone" class="form__input" placeholder="Введите номер телефона">
+          </div>
+          <button class="form__submit" type="submit">Запросить коммерческое предложение</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="examples">
+    <div class="examples__wrapper js-animated" data-animation="fadeInUp">
+      <h3 class="examples__title">Делаем архитектурное освещение<br>
+        <span class="examples__title--red">для всех типов зданий и объектов</span>
+      </h3>
+      <div class="examples__container">
+        <div class="examples__item">
+          <div class="examples__item-wrapper examples__item-wrapper--1">
+            <p class="examples__text">Бизнес центры, Торговые центры и ТРЦ</p>
+          </div>
+        </div>
+        <div class="examples__item">
+          <div class="examples__item-wrapper examples__item-wrapper--2">
+            <p class="examples__text">Жилые и гостиничные комплексы</p>
+          </div>
+        </div>
+        <div class="examples__item examples__item--3">
+          <div class="examples__item-wrapper examples__item-wrapper--3">
+            <p class="examples__text">Образовательные учреждения</p>
+          </div>
+        </div>
+        <div class="examples__item examples__item--4">
+          <div class="examples__item-wrapper examples__item-wrapper--4">
+            <p class="examples__text">Загородные дома и коттеджи</p>
+          </div>
+        </div>
+        <div class="examples__item examples__item--5">
+          <div class="examples__item-wrapper examples__item-wrapper--5">
+            <p class="examples__text">Мосты и транспортные развязки</p>
+          </div>
+        </div>
+        <div class="examples__item examples__item--6">
+          <div class="examples__item-wrapper examples__item-wrapper--6">
+            <p class="examples__text">Храмы и архитектурные памятники</p>
+          </div>
+        </div>
+        <div class="examples__item examples__item--7">
+          <div class="examples__item-wrapper examples__item-wrapper--7">
+            <p class="examples__text">Спортивные объекты и площадки</p>
+          </div>
+        </div>
+        <div class="examples__item examples__item--8">
+          <div class="examples__item-wrapper examples__item-wrapper--8">
+            <p class="examples__text">Административные объекты</p>
+          </div>
+        </div>
+        <div class="examples__item examples__item--9">
+          <div class="examples__item-wrapper examples__item-wrapper--9">
+            <p class="examples__text">Телевизионные вышки и башни</p>
+          </div>
+        </div>
+        <div class="examples__item examples__item--10">
+          <div class="examples__item-wrapper examples__item-wrapper--10">
+            <p class="examples__text">Промышленные объекты</p>
+          </div>
+        </div>
+        <div class="examples__item examples__item--11">
+          <div class="examples__item-wrapper examples__item-wrapper--11">
+            <p class="examples__text">Аэропорты и вокзалы</p>
+          </div>
+        </div>
+        <div class="examples__item examples__item--12">
+          <div class="examples__item-wrapper examples__item-wrapper--12">
+            <p class="examples__text">Парки и скверы</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="services__wrapper">
+      <div class="services__description">
+        <p class="services__text js-animated" data-animation="fadeInUp">Возьмём все заботы на себя</p>
+        <p class="services__title js-animated" data-animation="fadeInUp">Вы <span class="services__title--red">получите
+            всё</span> в одном месте: от концепции и до реализации проекта под ключ</p>
+        <p class="services__text services__text--big js-animated" data-animation="fadeInUp">с гарантией не менее 6 лет
+        </p>
+      </div>
+      <div class="services__callback callback js-animated" data-animation="fadeInRight">
+        <div class="callback__wrapper">
+          <div class="callback__modal modal">
+            <p class="modal__title">По телефону перезвоню и сориентирую по
+              стоимости <b>уже через 15 минут</b></p>
+            <form action="send.php" class="modal__form form">
+              <div class="form__field">
+                <label for="phone1" class="visually-hidden">Контакный телефон</label>
+                <input type="tel" name="phone" id="phone1" class="form__input form__input--small"
+                  placeholder="Ваш номер телефона">
+              </div>
+              <button class="form__submit form__submit--small" type="submit">Заказать звонок для консультации</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="adjustment">
+    <div class="adjustment__wrapper">
+      <div class="adjustment__block js-animated" data-animation="fadeInLeft">
+        <div class="adjustment__item adjustment-item">
+          <p class="adjustment-item__number">1</p>
+          <img src="./img/adj-1.webp" alt="Дизайн светотехнической концепции" class="adjustment-item__img">
+          <h4 class="adjustment-item__title">Дизайн и разработка светотехнической концепции</h4>
+        </div>
+        <div class="adjustment__item adjustment-item">
+          <p class="adjustment-item__number">2</p>
+          <img src="./img/adj-2.webp" alt="Разработка сметной документации" class="adjustment-item__img">
+          <h4 class="adjustment-item__title">Разработка и согласование<br> проектно - сметной документации</h4>
+        </div>
+        <div class="adjustment__item adjustment-item">
+          <p class="adjustment-item__number">3</p>
+          <img src="./img/adj-3.webp" alt="Инженерное проектирование" class="adjustment-item__img">
+          <h4 class="adjustment-item__title">Инженерное<br>проектирование</h4>
+        </div>
+      </div>
+      <div class="adjustment__block js-animated" data-animation="fadeInRight">
+        <div class="adjustment__item adjustment-item">
+          <p class="adjustment-item__number">4</p>
+          <img src="./img/adj-4.webp" alt="Поставка оборудования и материалов" class="adjustment-item__img">
+          <h4 class="adjustment-item__title">Поставка оборудования и<br>материалов</h4>
+        </div>
+        <div class="adjustment__item adjustment-item">
+          <p class="adjustment-item__number">5</p>
+          <img src="./img/adj-5.webp" alt="Строительно-монтажные работы" class="adjustment-item__img">
+          <h4 class="adjustment-item__title">Строительно-монтажные<br>работы</h4>
+        </div>
+        <div class="adjustment__item adjustment-item">
+          <p class="adjustment-item__number">6</p>
+          <img src="./img/adj-6.webp" alt="Диагностика и обслуживание" class="adjustment-item__img">
+          <h4 class="adjustment-item__title">Диагностика и <br>обслуживание</h4>
+        </div>
+      </div>
+    </div>
+    <div class="adjustment__text-wrapper js-animated" data-animation="fadeInLeft">
+      <p class="adjustment__text">Дополнительные услуги</p>
+    </div>
+    <div class="adjustment__wrapper">
+      <div class="adjustment__block js-animated" data-animation="fadeInUp">
+        <div class="adjustment__item adjustment-item">
+          <p class="adjustment-item__number adjustment-item__number--grey">7</p>
+          <img src="./img/adj-7.webp" alt="Согласование альбома-концепции" class="adjustment-item__img">
+          <h4 class="adjustment-item__title">Согласование альбома-концепции</h4>
+        </div>
+        <div class="adjustment__item adjustment-item">
+          <p class="adjustment-item__number adjustment-item__number--grey">8</p>
+          <img src="./img/adj-8.webp" alt="Шеф-монтаж оборудования" class="adjustment-item__img">
+          <h4 class="adjustment-item__title">Шеф-монтаж оборудования</h4>
+        </div>
+        <div class="adjustment__item adjustment-item">
+          <p class="adjustment-item__number adjustment-item__number--grey">9</p>
+          <img src="./img/adj-9.webp" alt="Авторский надзор" class="adjustment-item__img">
+          <h4 class="adjustment-item__title">Авторский надзор</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="types" id="types">
+    <div class="types__wrapper">
+      <h3 class="types__title js-animated" data-animation="fadeInUp">
+        <span class="types__title--red">Профессионально занимаемся</span>
+        <br>
+        всеми типами фасадного освещения
+      </h3>
+      <div class="types__container js-animated" data-animation="fadeInUp">
+        <div class="types__item type">
+          <img src="./img/types-1.webp" alt="Заливающая" class="type__img">
+          <h4 class="type__title">Заливающая</h4>
+          <p class="type__text">
+            Такой тип подсветки используется для освещения фасадов по всему объему здания, равномерным заливающим
+            светом. Особо популярен при создании иллюминации общественных зданий
+          </p>
+        </div>
+        <div class="types__item type">
+          <img src="./img/types-2.webp" alt="Контурная" class="type__img">
+          <h4 class="type__title">Контурная</h4>
+          <p class="type__text">
+            Контурное освещение выделяет геометрию здания, создаёт искусственное очертание объекта. Данный приём можно
+            считать необходимой вещью для создания индивидуального образа высотных зданий
+          </p>
+        </div>
+        <div class="types__item type">
+          <img src="./img/types-3.webp" alt="Световой фасад" class="type__img">
+          <h4 class="type__title">Световой фасад</h4>
+          <p class="type__text">
+            Решение, позволяющее сформировать образ объекта или его силуэт без каких-либо манипуляций с внешней частью
+            здания. Идеально подойдет для сложной фасадной системы выполненной из стекла
+          </p>
+        </div>
+        <div class="types__item type">
+          <img src="./img/types-4.webp" alt="Фоновая" class="type__img">
+          <h4 class="type__title">Фоновая</h4>
+          <p class="type__text">
+            Благодаря данному виду подсветки становится возможным расставить акценты на фасаде здания и избежать
+            излишнего светового загрязнения фасада. Один из самых часто используемых приемов. Подходит для любых задач и
+            объемов
+          </p>
+        </div>
+        <div class="types__item type">
+          <img src="./img/types-5.webp" alt="Локальная" class="type__img">
+          <h4 class="type__title">Локальная</h4>
+          <p class="type__text">
+            Особенной чертой конкретного типа подсветки является способность разделения здания на необходимые объемы,
+            что позволяет совсем по-другому увидеть фасад в темное время суток. Неотъемлемая часть среди сложных и
+            многогранных фасадов
+          </p>
+        </div>
+        <div class="types__item type">
+          <img src="./img/types-6.webp" alt="Динамическая" class="type__img">
+          <h4 class="type__title">Динамическая</h4>
+          <p class="type__text">
+            Подсветка данного типа задает световые сценарии и способна передать заданную идею в динамике. Привлечет
+            необходимое внимание к объекту и сделает его поводом для обсуждения
+          </p>
+        </div>
+      </div>
+      <button class="form__submit form__submit--types js-modal-btn" type="button">Заказать архитектурное освещение</button>
+    </div>
+  </section>
+
+  <section class="master">
+    <div class="master__overlay"></div>
+    <div class="master__wrapper">
+      <div class="master__header">
+        <div class="master__description">
+          <h5 class="master__title js-animated" data-animation="fadeInUp">Не знаете какой <span
+              class="master__title--red">тип освещения</span> выбрать?</h5>
+          <p class="master__head-text js-animated" data-animation="fadeInUp">
+            Мы можем отправить к Вам специалиста, который проконсультирует и предложит варианты освещения, подходящий
+            именно Вам
+          </p>
+          <p class="master__warning js-animated" data-animation="fadeInUp">Выезд специалиста БЕСПЛАТНО!</p>
+        </div>
+        <div class="master__callback callback callback--master js-animated" data-animation="fadeInUp">
+          <div class="callback__wrapper">
+            <div class="callback__modal modal">
+              <p class="modal__warning">Вызовите специалиста</p>
+              <p class="modal__title">Подберем для Вас все варианты освещения и бесплатно проконсультируем</p>
+              <form action="send.php" class="modal__form form">
+                <div class="form__field">
+                  <label for="phone2" class="visually-hidden">Контакный телефон</label>
+                  <input type="tel" name="phone" id="phone2" class="form__input form__input--small"
+                    placeholder="Введите номер телефона">
+                </div>
+                <button class="form__submit" type="submit">Вызвать специалиста</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="master__text">При подборе освещения учитываем:</p>
+      <div class="master__plan plan">
+        <div class="plan__item plan__item--type">
+          <p class="plan__text">Тип объекта</p>
+        </div>
+        <div class="plan__item plan__item--size">
+          <p class="plan__text">Габариты объекта</p>
+        </div>
+        <div class="plan__item plan__item--around">
+          <p class="plan__text">Окружение объекта</p>
+        </div>
+        <div class="plan__item plan__item--style">
+          <p class="plan__text">Стилистическое архитектурное решение</p>
+        </div>
+        <div class="plan__item plan__item--normative">
+          <p class="plan__text">Нормы и требования к освещению</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <h2 class="portfolio__title">За год мы установили <span class="portfolio__title--red">26 420 светильников</span> и
+      реализовали <span class="portfolio__title--red">87 проектов</span> архитектурного освещения по всей России</h2>
+    <p class="portfolio__text">посмотрите некоторые наши проекты</p>
+    <ul class="portfolio__menu">
+      <li>
+        <a href="#" class="portfolio__menu-item portfolio__menu-item--active" data-index="0">Все</a>
+      </li>
+      <li>
+        <a href="#" class="portfolio__menu-item" data-index="1">Торговые центры</a>
+      </li>
+      <li>
+        <a href="#" class="portfolio__menu-item" data-index="2">Жилые и гостиничные комплексы</a>
+      </li>
+      <li>
+        <a href="#" class="portfolio__menu-item" data-index="3">Мосты и транспортные развязки</a>
+      </li>
+      <li>
+        <a href="#" class="portfolio__menu-item" data-index="4">Храмы</a>
+      </li>
+      <li>
+        <a href="#" class="portfolio__menu-item" data-index="5">Дома и коттеджи</a>
+      </li>
+      <li>
+        <a href="#" class="portfolio__menu-item" data-index="6">Исторические здания</a>
+      </li>
+      <li>
+        <a href="#" class="portfolio__menu-item" data-index="7">Административные здания</a>
+      </li>
+    </ul>
+    <div class="portfolio__container">
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="1" data-alt="ТРЦ"
+          style="background-image: url(./img/portfolio-1.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="1" data-alt="ТРЦ «Новомосковский»"
+          style="background-image: url(./img/portfolio-2.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="1" data-alt="ТЦ «Brosko Mall»"
+          style="background-image: url(./img/portfolio-3.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="1" data-alt="ТЦ «Март»"
+          style="background-image: url(./img/portfolio-4.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="1" data-alt="ТЦ «Можайский Двор»"
+          style="background-image: url(./img/portfolio-5.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="1" data-alt="ТЦ «Севастополь»"
+          style="background-image: url(./img/portfolio-6.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="2" data-alt="Жилой комплекс «Трианон»"
+          style="background-image: url(./img/portfolio-7.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="2" data-alt="Жилой комплекс г. Екатеринбург"
+          style="background-image: url(./img/portfolio-8.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="2" data-alt="Отель «Marins Park Hotel»"
+          style="background-image: url(./img/portfolio-9.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="3" data-alt="Мост в г. Белгород"
+          style="background-image: url(./img/portfolio-10.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="3" data-alt="Мост через Волгу"
+          style="background-image: url(./img/portfolio-11.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="3" data-alt="Транспортная развязка г. Белгород"
+          style="background-image: url(./img/portfolio-12.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="4" data-alt="Памятник в Луксоре"
+          style="background-image: url(./img/portfolio-13.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="4" data-alt="Площадь в Калининграде"
+          style="background-image: url(./img/portfolio-14.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="4" data-alt="Поклонный крест г. Нижний Новгород"
+          style="background-image: url(./img/portfolio-15.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="4" data-alt="Спасская часовня г. Нижний Новгород"
+          style="background-image: url(./img/portfolio-16.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="5" data-alt="P_k4"
+          style="background-image: url(./img/portfolio-17.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="5" data-alt="Коттедж"
+          style="background-image: url(./img/portfolio-18.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="5" data-alt="Визуализация коттеджа"
+          style="background-image: url(./img/portfolio-19.png);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="5" data-alt="Загородный дом"
+          style="background-image: url(./img/portfolio-20.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="6" data-alt="Ликеро-водочный завод"
+          style="background-image: url(./img/portfolio-21.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="6" data-alt="Нижегородский кремль"
+          style="background-image: url(./img/portfolio-22.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="6" data-alt="Освещение федерального казначейства г. Владимир"
+          style="background-image: url(./img/portfolio-23.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="6" data-alt="Освещение федерального казначейства"
+          style="background-image: url(./img/portfolio-24.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="6" data-alt="Памятник культуры на ул. Остоженка"
+          style="background-image: url(./img/portfolio-25.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="6" data-alt="подсветка Нижегородского кремля"
+          style="background-image: url(./img/portfolio-26.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="7" data-alt="«Транснефть»"
+          style="background-image: url(./img/portfolio-27.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="7" data-alt="Аэропорт г. Норильск"
+          style="background-image: url(./img/portfolio-28.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="7" data-alt="Кинотеатр «Октябрь»"
+          style="background-image: url(./img/portfolio-29.webp);"></a>
+      </div>
+      <div class="portfolio__item js-animated" data-animation="upScale">
+        <a class="portfolio__link" data-index="7" data-alt="Школа г. Гыда"
+          style="background-image: url(./img/portfolio-30.webp);"></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="solutions js-animated" data-animation="fadeInUp">
+    <div class="solutions__wrapper">
+      <h2 class="solutions__title">Разработаем уникальное решение<br><span class="solutions__title--red">под ваши
+          задачи</span></h2>
+      <div class="solutions__container">
+        <div class="solutions__item solution">
+          <h4 class="solution__title solution__title--1">Застройщикам</h4>
+          <p class="solution__text">
+            Архитектурное освещение повысит привлекательность вашего здания,сделает объекты особенными и узнаваемыми,
+            выделив вас на рынке.Комфортная среда постройки и прилегающей к ней территории,гарантированно увеличит
+            стоимость вашего объекта недвижимости.
+          </p>
+        </div>
+        <div class="solutions__item solution">
+          <h4 class="solution__title solution__title--2">ПРОЕКТИРОВЩИКАМ И АРХИТЕКТОРАМ</h4>
+          <p class="solution__text">
+            Создадим визуальную концепцию освещения, которая позволит индивидуально подчеркнуть архитектуру здания, и
+            возьмем на себя все проектные работы. При необходимости согласуем ваш проект во всех требуемых органах.
+          </p>
+        </div>
+        <div class="solutions__item solution">
+          <h4 class="solution__title solution__title--3">ГЕНПОДРЯДЧИКАМ</h4>
+          <p class="solution__text">
+            В рамках согласованного сметного бюджета выполним и реализуем все необходимые работы по архитектурному
+            освещению объекта и его территории под ключ. Моментально реагируем на экстренные ситуации,выезжаем на Моск
+            Ур и принимаем участие в согласовании каждого решения с заказчиком.
+          </p>
+        </div>
+        <div class="solutions__item solution">
+          <h4 class="solution__title solution__title--4">ВЛАДЕЛЬЦАМ КОММЕРЧЕСКОЙ НЕДВИЖИМОСТИ</h4>
+          <p class="solution__text">
+            С помощью архитектурной подсветки мы повысим узнаваемость вашего объекта и сделаем его привлекательным. Это
+            позволит привлечь якорных арендаторов и увеличит трафик посетителей.
+          </p>
+        </div>
+        <div class="solutions__item solution">
+          <h4 class="solution__title solution__title--5">УПРАВЛЯЮЩИМ КОМПАНИЯМ</h4>
+          <p class="solution__text">
+            Архитектурное освещение увеличит лояльность собственников и арендаторов. Новый ночной вид здания придаст
+            статус и привлечет
+            дополнительное внимание в глазах людей.
+          </p>
+        </div>
+        <div class="solutions__item solution">
+          <h4 class="solution__title solution__title--6">ВЛАДЕЛЬЦАМ ЧАСТНЫХ ДОМОВ</h4>
+          <p class="solution__text">
+            Освещение фасада частного дома создаст благоприятную среду
+            проживания и добавит ему уюта. Наше архитектурно-художественное
+            освещение возможно интегрировать в любую современную систему умного
+            дома.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="architect">
+    <div class="architect__container">
+      <div class="architect__wrapper">
+        <h2 class="architect__title js-animated" data-animation="fadeInLeft">
+          Получите консультацию <span class="architect__title--red">Главного Архитектора</span> и расчёт стоимости
+          освещения прямо сейчас!
+        </h2>
+        <div class="architect__services">
+          <div class="architect__item js-animated" data-animation="fadeInUp">
+            <p class="architect__text architect__text--1">
+              Разработка дизайн-проектов фасадного освещения любой сложности
+            </p>
+          </div>
+          <div class="architect__item js-animated" data-animation="fadeInUp">
+            <p class="architect__text architect__text--2">
+              Расчёт времени изготовления заказа
+            </p>
+          </div>
+          <div class="architect__item js-animated" data-animation="fadeInUp">
+            <p class="architect__text architect__text--3">
+              Рекомендации по подбору материалов и выбор цвета освещения
+            </p>
+          </div>
+          <div class="architect__item js-animated" data-animation="fadeInUp">
+            <p class="architect__text architect__text--4">Расчет стоимости в рамках выбранного ценового диапазона</p>
+          </div>
+        </div>
+        <img src="./img/architect-img.webp" alt="Здание" class="architect__img">
+        <div class="architect__callback callback callback--architect js-animated" data-animation="fadeInUp">
+          <div class="callback__modal modal">
+            <p class="modal__warning">Оставить заявку</p>
+            <p class="modal__title">на бесплатную консультацию с главным
+              архитектором компании Новый Свет Инжиниринг</p>
+            <form action="send.php" class="modal__form form">
+              <div class="form__field">
+                <label for="phone3" class="visually-hidden">Контакный телефон</label>
+                <input type="tel" name="phone" id="phone3" class="form__input form__input--small"
+                  placeholder="Введите номер телефона">
+              </div>
+              <button class="form__submit" type="submit">Заказать звонок для консультации</button>
+            </form>
+            <p class="modal__subtitle">Главный Архитектор перезвонит по
+              указанному номеру в течение 15 минут</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts js-animated" data-animation="fadeInUp" id="contacts">
+    <div class="contacts__wrapper">
+      <p class="contacts__sup-title">Компания Новый Свет Инжиниринг</p>
+      <h2 class="contacts__title">
+        Подготовит для вас<br>
+        <span class="contacts__title--red">уникальное световое оформление</span>
+      </h2>
+      <div class="contacts__container">
+        <div class="contacts__description js-animated" data-animation="fadeInRight">
+          <p class="contacts__text">
+            Мы не работаем по шаблону. К нам часто обращаются заказчики с нестандартной задачей. Мы всегда беремся за
+            реализацию таких проектов - ведь это и есть самое интересное в нашей работе. Создание уникальной
+            дизайн-концепции каждого объекта позволяет реализовывать самые неординарные задумки.
+          </p>
+          <div class="contacts__achievments achievments">
+            <div class="achievments__item">
+              <p class="achievments__sub-title">Более</p>
+              <b class="achievments__title">10</b>
+              <p class="achievments__sub-title">лет на рынке</p>
+            </div>
+            <div class="achievments__item">
+              <p class="achievments__sub-title">Более</p>
+              <b class="achievments__title">400</b>
+              <p class="achievments__sub-title">выполненных проектов</p>
+            </div>
+            <div class="achievments__item">
+              <b class="achievments__title">49</b>
+              <p class="achievments__sub-title">сотрудника в штате</p>
+            </div>
+          </div>
+        </div>
+        <div class="contacts__contact contact js-animated" data-animation="fadeInLeft">
+          <h3 class="contact__title">Наши контакты</h3>
+          <a href="tel:+79257145111" class="contact__item contact__item--phone">8 (925) 714-51-11</a>
+          <p class="contact__item  contact__item--time">Пн-Пт 9:00 - 18:00</p>
+          <p class="contact__item  contact__item--address">г. Москва, наб. Дербеневская, д. 7, стр. 2, помещение
+            35/1/3(РМ281)</p>
+          <a href="mailto: info@arh-moscow.ru" class="contact__item  contact__item--mail">info@arh-moscow.ru</a>
+          <p class="contact__text">Задайте вопрос напрямую:
+          </p>
+          <a href="https://api.whatsapp.com/send?phone=+79257145111" class="form__submit contact__btn" type="submit">написать в WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="catalog">
+    <div class="catalog__wrapper">
+      <p class="catalog__text js-animated" data-animation="fadeInUp">Получите полный каталог</p>
+      <h2 class="catalog__title js-animated" data-animation="fadeInUp">С примерами объектов</h2>
+      <div class="catalog__container">
+        <div class="catalog__description js-animated" data-animation="fadeInRight">
+          <h4 class="catalog__sub-title">В каталоге вы увидите:</h4>
+          <div class="catalog__list">
+            <p class="catalog__item catalog__item--examples">Примеры выполненных работ по освещению</p>
+            <p class="catalog__item catalog__item--advices">Советы по правильному выбору освещения</p>
+          </div>
+          <div class="catalog__img-wrapper">
+            <picture>
+              <img src="./img/catalog-img.webp" alt="Каталог" class="catalog__img">
+            </picture>
+          </div>
+        </div>
+        <div class="catalog__callback-wrapper js-animated" data-animation="fadeInLeft">
+          <div class="catalog__callback callback">
+            <div class="callback__modal modal">
+              <p class="modal__warning">Оставьте свои контактные
+                данные</p>
+              <p class="modal__title">и мы пришлем Вам полный
+                каталог лучших проектов нашей компании в течение 5 минут</p>
+              <form action="send.php" class="modal__form form">
+                <div class="form__field">
+                  <label for="name">Ваше имя</label>
+                  <input type="tel" name="name" id="name" class="form__input form__input--small"
+                    placeholder="Введите ваше имя">
+                </div>
+                <div class="form__field">
+                  <label for="email">Ваш E-mail</label>
+                  <input type="tel" name="email" id="email" class="form__input form__input--small"
+                    placeholder="Введите ваш e-mail">
+                </div>
+                <div class="form__field">
+                  <label for="phone4">Контактный телефон <span style="color: #ef4242">*</span></label>
+                  <input type="tel" name="phone" id="phone4" class="form__input form__input--small"
+                    placeholder="Введите номер телефона">
+                </div>
+                <button class="form__submit" type="submit"><span class="form__submit-bg"></span>Заказать
+                  Каталог</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <section class="footer__content">
+        <a href="index.html" class="header__logo footer__logo">
+          <img src="./img/logo--white.svg" alt="">
+        </a>
+        <p class="footer__description">
+          Компания на рынке архитектурно-художественного освещения уже более 10 лет, за это время успешно реализовано
+          более 200 проектов на всей территории РФ. Мы умеем решать самые сложные задачи!
+        </p>
+        <div class="footer__contacts contacts-f">
+          <h4 class="contacts-f__title">С нами можно связаться</h4>
+          <a href="tel:+79257145111" class="contacts-f__item contacts-f__item--phone">8 (925) 714-51-11</a>
+          <a href="mailto: info@arh-moscow.ru" class="contacts-f__item contacts-f__item--mail">info@arh-moscow.ru</a>
+          <a href="https://t.me/+79257145111" class="contacts-f__telegram">Задайте вопрос в<span
+              class="contacts-f__telegram--icon">Telegram</span></a>
+          <p class="contacts-f__item contacts-f__item--time">Режим работы: Пн - Пт с 09:00 до 18:00</p>
+        </div>
+        <div class="footer__navigation navigation-f">
+          <h3 class="navigation-f__title">Навигация по сайту</h3>
+          <ul class="navigation-f__list">
+            <li>
+              <a href="#main" class="navigation-f__item">На главную</a>
+            </li>
+            <li>
+              <a href="#services" class="navigation-f__item">Услуги</a>
+            </li>
+            <li>
+              <a href="#types" class="navigation-f__item">Виды освещения</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="navigation-f__item">Портфолио</a>
+            </li>
+            <li>
+              <a href="#contacts" class="navigation-f__item">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer__copyright copyright">
+        <h4 class="copyright__title">© ООО "Новый Свет Инжиниринг" 2023 г. Все права защищены.</h4>
+        <p class="copyright__requisites">ИНН: 9725095119 ОГРН: 1227700562220</p>
+      </section>
+    </div>
+  </footer>
+
+  <section class="__hidden">
+    <div class="popup hide">
+      <button class="popup__btn"></button>
+      <p class="popup__counter"></p>
+      <p class="popup__title"></p>
+      <button type="button" class="popup__control popup__control--right"></button>
+      <button type="button" class="popup__control popup__control--left"></button>
+      <div class="popup__content">
+        <div class="popup__content-wrapper"></div>
+      </div>
+    </div>
+    <div class="modal-cb modal-cb--closed">
+      <div class="modal-cb__wrapper">
+        <div class="modal-cb__modal modal">
+          <button class="modal-cb__btn" type="button"></button>
+          <p class="modal__warning">Проконсультируем Вас</p>
+          <p class="modal__title">по всем вопросам, просто впишите Ваш телефон</p>
+          <form action="send.php" class="modal__form form">
+            <div class="form__field">
+              <label for="phone5" class="visually-hidden">Контактный телефон</label>
+              <input type="tel" name="phone" id="phone5" class="form__input form__input--small"
+                placeholder="Введите номер телефона">
+            </div>
+            <button class="form__submit" type="submit">Заказать
+              Консультацию</button>
+          </form>
+          <p class="modal__manager">Менеджер Дмитрий перезвонит по указанному номеру в течение 5 минут</p>
+          <p class="modal__manager modal__manager--big">ИЛИ</p>
+          <a href="tel:+79257145111" class="modal__phone">8 (925) 714-51-11</a>
+          <a href="https://api.whatsapp.com/send?phone=+79257145111" class="contacts-f__telegram">Задайте вопрос в<span
+            class="contacts-f__telegram--icon">WhatsApp</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="./js/jquery.js"></script>
+  <script src="./js/animated-text.js"></script>
+  <script src="./js/script.min.js"></script>
+</body>
+
+</html>

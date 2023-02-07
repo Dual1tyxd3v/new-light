@@ -114,7 +114,7 @@
     &__wrapper {
       justify-content: space-between;
       align-items: center;
-      height: 70px;
+      height: auto;
     }
     &__description {
       display: none;
@@ -140,7 +140,6 @@
       max-width: 1140px;
       margin: 0 auto;
       z-index: 4;
-      height: 56px;
     }
     &__description {
       display: inline;
