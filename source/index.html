@@ -14,7 +14,7 @@
     <div class="header__container">
       <div class="header__wrapper">
         <div class="header__logo-wrapper">
-          <a href="index.html" class="header__logo">
+          <a href="index.html" class="header__logo" aria-label="Логотип">
             <picture>
               <source media="(min-width: 770px)" srcset="./img/logo--white.svg">
               <img src="./img/logo--black.svg" alt="">
@@ -27,18 +27,18 @@
           <div class="header__contacts-wrapper">
             <div class="header__telegram telegram">
               <p class="telegram__text">Связаться с нами <br>через мессенджеры:</p>
-              <a href="https://t.me/+79257145111" class="telegram__link icon"></a>
+              <a href="https://t.me/+79257145111" class="telegram__link icon" aria-label="Написать в телеграм"></a>
             </div>
             <div class="header__phone phone">
               <p class="phone__warning">Звоните, мы работаем</p>
-              <a href="tel:+79257145111" class="phone__link icon">
+              <a href="tel:+79257145111" class="phone__link icon" aria-label="Позвонить нам">
                 <span class="phone__link--desktop">8 (925) 714-51-11</span>
               </a>
               <button class="phone__button js-modal-btn" type="button">Заказать консультацию</button>
             </div>
           </div>
         </div>
-        <button class="header__button" type="button">
+        <button class="header__button" type="button" aria-label="Menu">
           <span class="header__burger"></span>
         </button>
       </div>
@@ -92,9 +92,9 @@
 
   <section class="examples">
     <div class="examples__wrapper js-animated" data-animation="fadeInUp">
-      <h3 class="examples__title">Делаем архитектурное освещение<br>
+      <h2 class="examples__title">Делаем архитектурное освещение<br>
         <span class="examples__title--red">для всех типов зданий и объектов</span>
-      </h3>
+      </h2>
       <div class="examples__container">
         <div class="examples__item">
           <div class="examples__item-wrapper examples__item-wrapper--1">
@@ -194,17 +194,17 @@
         <div class="adjustment__item adjustment-item">
           <p class="adjustment-item__number">1</p>
           <img src="./img/adj-1.webp" alt="Дизайн светотехнической концепции" class="adjustment-item__img">
-          <h4 class="adjustment-item__title">Дизайн и разработка светотехнической концепции</h4>
+          <h3 class="adjustment-item__title">Дизайн и разработка светотехнической концепции</h3>
         </div>
         <div class="adjustment__item adjustment-item">
           <p class="adjustment-item__number">2</p>
           <img src="./img/adj-2.webp" alt="Разработка сметной документации" class="adjustment-item__img">
-          <h4 class="adjustment-item__title">Разработка и согласование<br> проектно - сметной документации</h4>
+          <h3 class="adjustment-item__title">Разработка и согласование<br> проектно - сметной документации</h3>
         </div>
         <div class="adjustment__item adjustment-item">
           <p class="adjustment-item__number">3</p>
           <img src="./img/adj-3.webp" alt="Инженерное проектирование" class="adjustment-item__img">
-          <h4 class="adjustment-item__title">Инженерное<br>проектирование</h4>
+          <h3 class="adjustment-item__title">Инженерное<br>проектирование</h3>
         </div>
       </div>
       <div class="adjustment__block js-animated" data-animation="fadeInRight">
@@ -519,8 +519,8 @@
 
   <section class="solutions js-animated" data-animation="fadeInUp">
     <div class="solutions__wrapper">
-      <h2 class="solutions__title">Разработаем уникальное решение<br><span class="solutions__title--red">под ваши
-          задачи</span></h2>
+      <h3 class="solutions__title">Разработаем уникальное решение<br><span class="solutions__title--red">под ваши
+          задачи</span></h3>
       <div class="solutions__container">
         <div class="solutions__item solution">
           <h4 class="solution__title solution__title--1">Застройщикам</h4>
@@ -671,7 +671,7 @@
   <section class="catalog">
     <div class="catalog__wrapper">
       <p class="catalog__text js-animated" data-animation="fadeInUp">Получите полный каталог</p>
-      <h2 class="catalog__title js-animated" data-animation="fadeInUp">С примерами объектов</h2>
+      <h3 class="catalog__title js-animated" data-animation="fadeInUp">С примерами объектов</h3>
       <div class="catalog__container">
         <div class="catalog__description js-animated" data-animation="fadeInRight">
           <h4 class="catalog__sub-title">В каталоге вы увидите:</h4>
@@ -721,7 +721,7 @@
   <footer class="footer">
     <div class="footer__wrapper">
       <section class="footer__content">
-        <a href="index.html" class="header__logo footer__logo">
+        <a href="index.html" class="header__logo footer__logo" aria-label="Логотип">
           <img src="./img/logo--white.svg" alt="">
         </a>
         <p class="footer__description">
@@ -769,8 +769,8 @@
       <button class="popup__btn"></button>
       <p class="popup__counter"></p>
       <p class="popup__title"></p>
-      <button type="button" class="popup__control popup__control--right"></button>
-      <button type="button" class="popup__control popup__control--left"></button>
+      <button type="button" class="popup__control popup__control--right" aria-label="Следующий слайд"></button>
+      <button type="button" class="popup__control popup__control--left" aria-label="Предыдущий слайд"></button>
       <div class="popup__content">
         <div class="popup__content-wrapper"></div>
       </div>
@@ -778,7 +778,7 @@
     <div class="modal-cb modal-cb--closed">
       <div class="modal-cb__wrapper">
         <div class="modal-cb__modal modal">
-          <button class="modal-cb__btn" type="button"></button>
+          <button class="modal-cb__btn" type="button" aria-label="Закрыть модальное окно"></button>
           <p class="modal__warning">Проконсультируем Вас</p>
           <p class="modal__title">по всем вопросам, просто впишите Ваш телефон</p>
           <form action="send.php" class="modal__form form">
